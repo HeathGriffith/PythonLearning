@@ -15,11 +15,16 @@ favorite_fiction = {
 # (3) Update a book's price.
 
 favorite_fiction["British Literature"][1]["price"] = "$8.99"
+
+# (4) Add a new book to a genre.
+
+favorite_fiction["Historical Fiction"].append({"title": "Tai-Pan", "author": "James Clavell", "year": "1966", "price": "$12.99"})
+
+#(5) Remove a book from a genre.
+
+del favorite_fiction["British Literature"][1]
 print(favorite_fiction)
 '''
-(4) Add a new book to a genre.
-
-(5) Remove a book from a genre.
 (6) Sort the books by price.
 (7) Print them in the format: "Title": [Title], "Author": [Author], "Year": [Year], "Price": [Price]
 '''
