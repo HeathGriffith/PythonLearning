@@ -20,7 +20,6 @@ This repository is organized into sections corresponding to different Python con
 
 ### Functions
 - **General Function Concepts**: Scripts and notes on Python functions.
-  - `Lab 1 - A Simple Function`: Implementation of a basic function in Python.
   - `Lab 2 - Introduction to Boto3`: Scripts introducing the Boto3 library for AWS.
   - `Lab 3 - The main() Function`: Examples demonstrating the use of the `main()` function in Python.
 
