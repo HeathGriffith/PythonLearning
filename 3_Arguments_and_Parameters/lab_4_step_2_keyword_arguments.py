@@ -38,9 +38,9 @@ if __name__=="__main__":
 (B)'''
 import boto3
 
-def translate_text(**kwargs): 
+def translate_text(**kwargs): # ** is used to indicate that the function accepts any number of keyword arguments
     client = boto3.client('translate')
-    response = client.translate_text(**kwargs)
+    response = client.translate_text(**kwargs) # **kwargs is used to collect all keyword arguments in a dictionary
     print(response) 
 
 kwargs={ # defined a variable called "kwargs" (convention) and assigned it a dictionary and placed each key-value pair on a separate line for readability
@@ -49,7 +49,7 @@ kwargs={ # defined a variable called "kwargs" (convention) and assigned it a dic
     "TargetLanguageCode":"fr"
     }
 
-def main():# Calls the translate_text function, unpacking the 'kwargs' dictionary into keyword arguments
+def main():# Calls the translate_text function, and the '**' unpacks the 'kwargs' dictionary into keyword arguments
     translate_text(**kwargs)
 
 
