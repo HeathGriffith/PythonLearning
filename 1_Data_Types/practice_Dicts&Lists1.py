@@ -22,7 +22,7 @@ favorite_fiction["Historical Fiction"].append({"title": "Tai-Pan", "author": "Ja
 
 #(5) Remove a book from a genre.
 
-del favorite_fiction["British Literature"][1]
+del favorite_fiction["British Literature"][0]
 print(favorite_fiction)
 
 
