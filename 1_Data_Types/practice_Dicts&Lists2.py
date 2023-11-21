@@ -18,11 +18,17 @@ aws_resources = {
 }
 
 # (1) Update a Resource's Status: Change the status of EC2_instance_2 to "running".
+
 aws_resources["EC2"][1]["status"] = "running"
+
 # (2) Add a New Resource: Add a new EC2 instance named EC2_instance_3 with your choice of attributes.
+
 aws_resources["EC2"].append({"name": "EC2_instance_3", "creation_date": "2021-11-30", "status": "stopped", "region": "us-west-2"})
+
 # (3) Delete a Resource: Remove backup_bucket from the S3 resources.
+
 del aws_resources["S3"][1]
+
 # (4) List Resources in a Specific Region: Write a loop or a set of statements that lists all resources located in "us-east-1".
 
 '''static, inferior solution:
@@ -39,6 +45,7 @@ for resource_type in aws_resources:
 
 
 # (5) Modify a Resource's Region: Change the region of inventory_db in RDS to "us-east-1".
+
 aws_resources["RDS"][1]["region"] = "us-east-1"
 
 # (6) Print the Updated Resources: Display the entire aws_resources dictionary in a readable format to review the changes made.
